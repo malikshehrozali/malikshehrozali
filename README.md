@@ -1,6 +1,10 @@
+<!-- Banner Image -->
+<div align="center">
+  <img src="./myBanner.jpg" alt="Banner" width="100%" />
+</div>
+
 # Hi there! 👋 I'm Malik Shehroz Ali
 ## AI Engineer & Full Stack Developer | Building intelligent solutions with modern web technologies | Open source enthusiast crafting the future of digital experiences.
-
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=00D8FF&center=true&vCenter=true&width=500&lines=Full+Stack+Developer;UI%2FUX+Enthusiast;Open+Source+Contributor;Problem+Solver;AI+Engineer" alt="Typing SVG" />
