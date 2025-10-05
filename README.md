@@ -25,7 +25,7 @@ const developer = {
     location: "Gujranwala, Pakistan",
     role: "Full Stack Developer | AI Engineer",
     languages: ["JavaScript", "Python", "TypeScript", "HTMl", "CSS"],
-    frameworks: ["React", "Next Js", "Three Js", "Node.js", "Express", "Django"],
+    frameworks: ["React", "Next Js", "Three Js", "Node.js", "Express", "Django", "Flask"],
     databases: ["MongoDB", "PostgreSQL", "MySQL"],
     cloud: ["AWS", "Google Cloud", "Azure"],
     currentlyLearning: "Machine Learning & AI",
