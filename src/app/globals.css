@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "times-new-roman";
+    src: url("../fonts/times.ttf");
+}
+@font-face {
+    font-family: "script";
+    src: url("../fonts/MonsieurLaDoulaise-Regular.ttf");
+}
+@layer utilities {
+    .animation-paused {
+        animation-play-state: paused;
+    }
+    .animation-running {
+        animation-play-state: running;
+    }
+}
+@theme {
+    --color-primary-orange: #ea593c;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: #ea593c;
+}
+
+.noise::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background: repeating-radial-gradient(#000 0 0.0001%, #00000000 0 0.0002%)
+            40% 40%/3000px 300px,
+        repeating-conic-gradient(#000 0 0.001%, #41414181 0 0.002%) 40% 40%/300px
+            3000px;
+    background-blend-mode: multiply;
+    animation: tv-noise 1s infinite alternate;
+}
+
+@keyframes tv-noise {
+    100% {
+        background-position: 50% 0, 60% 50%;
+    }
+}
+
+.sample-colors {
+    color: #26282a;
+}
+.mask {
+    mask-image: url(../../public/mask.svg);
+    background: #ea593c;
+    mask-repeat: no-repeat;
+    mask-size: var(--maskSize);
+    mask-position: var(--maskX) var(--maskY);
+    -webkit-mask-image: url(../../public/mask.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: var(--maskSize);
+    -webkit-mask-position: var(--maskX) var(--maskY);
+    /* transition: mask-size 0.3s ease, -webkit-mask-size 0.3s ease; */
+}
+
+.infinite {
+    animation: infinteScroll 10s linear infinite;
+}
+.infinite-inverse {
+    animation: infinteScroll 10s linear infinite reverse;
+}
+.infinite-inverse:hover {
+    animation-play-state: paused;
+}
+.maskText {
+    background-image: url(../../public/01.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.maskText2 {
+    background-image: url(../../public/02.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.infinite:hover {
+    animation-play-state: paused;
+}
+@keyframes infinteScroll {
+    to {
+        transform: translateX(calc(-100% - 80px));
+    }
+}
+
+.borderText {
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    -webkit-text-stroke: 2px #111;
+}
+
+/* globals.css */
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 12s linear infinite;
+}
+
+.windowMask {
+    mask-image: linear-gradient(black black);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.fade-in-up.visible {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
