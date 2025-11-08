@@ -1,5 +1,5 @@
 # <center style="font-size: 5rem; color:#ea593c">Malik Shehroz Ali</center>
-# 🌟 Portfolio Website
+## <center> 🌟 Portfolio Website </center>
 
 A modern, responsive portfolio website showcasing my work, skills, and professional journey.
 
@@ -124,4 +124,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
   <sub>Built with ❤️ by Malik Shehroz Ali</sub>
-</div># portfolio
+</div>
