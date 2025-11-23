@@ -6,20 +6,22 @@ import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import Projects from "@/pages/Projects";
 import Skills from "@/pages/Skills";
+import { Toaster } from "react-hot-toast";
 
 const page = () => {
-    return (
-        <>
-            <Scroller />
-            <Header />
-            <Hero />
-            <Skills />
-            <About />
-            <Projects />
-            <Contact />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Toaster />
+      <Scroller />
+      <Header />
+      <Hero />
+      <Skills />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
+    </>
+  );
 };
 
 export default page;
