@@ -18,6 +18,20 @@
 }
 @theme {
   --color-primary-orange: #ea593c;
+  /* --color-primary-orange: #030412; */
+  /* --color-primary: #030412;
+  --color-midnight: #06091f;
+  --color-navy: #161a31;
+  --color-indigo: #1f1e39;
+  --color-storm: #282b4b;
+  --color-aqua: #33c2cc;
+  --color-mint: #57db96;
+  --color-royal: #5c33cc;
+  --color-lavender: #7a57db;
+  --color-fuchsia: #ca2f8c;
+  --color-orange: #cc6033;
+  --color-sand: #d6995c;
+  --color-coral: #ea4884; */
   /* --color-primary-orange: #FEDC33;  */
 }
 html {
@@ -69,7 +83,6 @@ body {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: var(--maskSize);
   -webkit-mask-position: var(--maskX) var(--maskY);
-  /* transition: mask-size 0.3s ease, -webkit-mask-size 0.3s ease; */
 }
 
 .infinite {
@@ -80,18 +93,6 @@ body {
 }
 .infinite-inverse:hover {
   animation-play-state: paused;
-}
-.maskText {
-  background-image: url(../../public/01.jpg);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.maskText2 {
-  background-image: url(../../public/02.jpg);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 .infinite:hover {
   animation-play-state: paused;
@@ -107,8 +108,6 @@ body {
   color: transparent;
   -webkit-text-stroke: 2px #111;
 }
-
-/* globals.css */
 
 @keyframes spin-slow {
   from {
@@ -146,4 +145,35 @@ body {
 
 .fade-in-up.visible {
   animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.grid-1 {
+  @apply row-span-2 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
+}
+.grid-2 {
+  @apply row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
+}
+.grid-3 {
+  @apply row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
+}
+.grid-4 {
+  @apply row-span-1 md:col-span-2 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
+}
+.grid-5 {
+  @apply row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
+}
+
+.grid-black-color {
+  @apply p-6 bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] rounded-2xl;
+}
+
+.text-heading {
+  @apply font-bold text-4xl md:text-5xl text-center;
+}
+
+.section-spacing {
+  @apply min-h-screen mt-20 md:mt-30;
+}
+.c-space {
+  @apply sm:px-10 px-5 lg:px-15;
 }

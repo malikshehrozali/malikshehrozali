@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import PageTransition from "@/components/PageTransition";
+import PageTransition from "@/components/common/PageTransition";
 
 export const metadata: Metadata = {
   title: "Malik Shehroz Ali",
