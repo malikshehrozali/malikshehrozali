@@ -9,7 +9,7 @@ export const myProjects = [
     ],
     href: "https://github.com/malikshehrozali/aicm-clone",
     logo: "",
-    image: "/projects/aicm.png",
+    image: "/projects/aicm.webp",
     tags: [
       {
         id: 1,
@@ -46,7 +46,7 @@ export const myProjects = [
     ],
     href: "https://github.com/malikshehrozali/casecobra",
     logo: "",
-    image: "/projects/case-cobra.png",
+    image: "/projects/case-cobra.webp",
     tags: [
       {
         id: 1,
@@ -83,7 +83,7 @@ export const myProjects = [
     ],
     href: "https://github.com/malikshehrozali/flasktodo",
     logo: "",
-    image: "/projects/deepseek.png",
+    image: "/projects/deepseek.webp",
     tags: [
       {
         id: 1,
@@ -120,7 +120,7 @@ export const myProjects = [
     ],
     href: "https://github.com/malikshehrozali/forever-clothing-store",
     logo: "",
-    image: "/projects/forever.png",
+    image: "/projects/forever.webp",
     tags: [
       {
         id: 1,
@@ -157,7 +157,7 @@ export const myProjects = [
     ],
     href: "https://github.com/malikshehrozali/k72",
     logo: "",
-    image: "/projects/k72.png",
+    image: "/projects/k72.webp",
     tags: [
       {
         id: 1,
@@ -194,7 +194,7 @@ export const myProjects = [
     ],
     href: "https://github.com/malikshehrozali/myflix",
     logo: "",
-    image: "/projects/myflix.png",
+    image: "/projects/myflix.webp",
     tags: [
       {
         id: 1,
@@ -228,7 +228,7 @@ export const myProjects = [
     ],
     href: "https://github.com/malikshehrozali/bloggingSite",
     logo: "",
-    image: "/projects/patch.png",
+    image: "/projects/patch.webp",
     tags: [
       {
         id: 1,
